@@ -1,0 +1,431 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+  padding: 0 16px;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.head {
+  display: inline-block;
+}
+
+.head-link,
+.login-link,
+.signup-link,
+.logout-link,
+.bin-link,
+.about-link,
+.team-link {
+  text-decoration: none;
+  color: white;
+}
+
+.team {
+  position: absolute;
+  right: 395px;
+  top: 30px;
+  margin: 0 15px;
+}
+
+.toggle-view {
+  color: white;
+  position: absolute;
+  right: 495px;
+  top: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.bin {
+  position: absolute;
+  right: 325px;
+  top: 30px;
+  margin: 0 15px;
+}
+
+.username {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  margin: 0 15px;
+  color: white;
+  width: 76px;
+  text-align: left;
+}
+
+.about {
+  position: absolute;
+  right: 235px;
+  top: 30px;
+  margin: 0 15px;
+}
+
+.login {
+  position: absolute;
+  right: 125px;
+  top: 30px;
+  margin: 0 15px;
+}
+
+.signup {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  margin: 0 15px;
+}
+
+.logout {
+  position: absolute;
+  right: 135px;
+  top: 30px;
+  margin: 0 15px;
+}
+
+.links a {
+  border: 1px solid white;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 15px 10px 25px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
+
+.change-view {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 15px 10px 25px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.change-view h1 {
+  font-size: 1.3em;
+  margin-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 100px;
+}
+
+.change-view p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-left: 15px;
+  padding-right: 100px;
+}
+
+.change-view button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
+
+.change-view #delete-btn {
+  bottom: 18px;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.signup-comp {
+  width: 50%;
+  margin: 7% auto;
+}
+
+.signup-comp h1 {
+  margin: 40px 0;
+  color: white;
+  text-align: center;
+  background-color: #f5ba13;
+  width: 440px;
+  padding: 5px;
+}
+
+.form-box {
+  font-size: 1.2rem;
+}
+
+.form-box input {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: linear-gradient(150deg, #cbcbcb, transparent);
+  text-align: center;
+}
+
+.input-group {
+  margin: 18px 0;
+}
+
+.form-email {
+  height: 30px;
+  width: 220px;
+  margin-left: 50px;
+}
+
+.btn-submit {
+  font-size: 1.2rem;
+  padding: 3px 7px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: #f5ba13;
+  margin: 15px 0;
+  color: white;
+}
+
+.form-password {
+  height: 30px;
+  width: 220px;
+  margin-left: 14px;
+}
+
+.social-box {
+  margin: 40px 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.google {
+  margin: 20px 0px;
+}
+
+.btn-google {
+  padding: 6px 8px;
+  background-color: #dd4b39;
+}
+
+.btn-facebook {
+  padding: 6px 8px;
+  background-color: #3b5998;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: #bb993c;
+}
+
+.btn-google:hover {
+  cursor: pointer;
+  background-color: #c23321;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-facebook:hover {
+  cursor: pointer;
+  background-color: #2d4373;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-head {
+  text-align: center;
+  margin: 40px auto;
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.about-container {
+  width: 75%;
+  margin: 60px auto;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 10px 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.about-container li p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.about-container li {
+  margin: 20px 0;
+}
+
+.about-body span {
+  font-size: 1.7rem;
+  font-family: 'Arvo', serif;
+}
+
+.about-container span {
+  font-size: 1.2rem;
+  font-family: 'Arvo', serif;
+}
+
+.about-intro {
+  padding-bottom: 10px;
+}
+
+.teamform-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 100px 50px;
+}
+
+
+.teamform-container h1 {
+  margin: 20px 20px 40px;
+}
+
+.teamform-container .btn-submit{
+  width: 75px;
+}
+
+.create-team,
+.join-team,
+.goto-team {
+  margin: 50px 50px 25px;
+  flex-basis: 400px;
+  text-align: center;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.team-name {
+  padding: 10px;
+  background-color: rgba(97, 97, 97, 0.181);
+  font-size: 0.75rem;
+}
+
+#active-team-name {
+  padding: 10px;
+  background-color: #f5b913;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 0 5px #f5b913;
+  font-size: 0.95rem;
+}
+
+.left {
+  grid-row: span 2;
+  padding: 20px;
+}
+
+.right {
+  padding: 20px;
+}
+
+.left h3 {
+  margin: 10px 0 20px;
+  background-color: #f5ba13;
+  color: white;
+  padding: 7px;
+  box-shadow: 0 0 10px #f5ba13;
+}
+
+#team-note-username {
+  font-size: 0.75rem;
+}
